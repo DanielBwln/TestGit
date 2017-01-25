@@ -1,0 +1,1379 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: DBE
+
+; Microsoft Dynamics AX Enumtype : HM_GitOperationType unloaded
+; --------------------------------------------------------------------------------
+  ENUMTYPEVERSION 1
+  
+  ENUMTYPE #HM_GitOperationType
+    PROPERTIES
+      Name                #HM_GitOperationType
+      UseEnumValue        #Yes
+      Origin              #{8C2BF3CD-B73F-4589-85EB-6992667F1439}
+    ENDPROPERTIES
+    
+    TYPEELEMENTS
+      #AddToStage
+      PROPERTIES
+        Name                #AddToStage
+        Label               #@SYS60080
+        EnumValue           #0
+      ENDPROPERTIES
+      
+      #Diff
+      PROPERTIES
+        Name                #Diff
+        Label               #Diff
+        EnumValue           #1
+      ENDPROPERTIES
+      
+      #DiffWithPre
+      PROPERTIES
+        Name                #DiffWithPre
+        Label               #Diff with previous version
+        EnumValue           #2
+      ENDPROPERTIES
+      
+      #ShowLog
+      PROPERTIES
+        Name                #ShowLog
+        Label               #Show log
+        EnumValue           #3
+      ENDPROPERTIES
+      
+      #StashSave
+      PROPERTIES
+        Name                #StashSave
+        Label               #Stash save
+        EnumValue           #4
+      ENDPROPERTIES
+      
+      #Delete
+      PROPERTIES
+        Name                #Delete
+        Label               #Delete
+        EnumValue           #5
+      ENDPROPERTIES
+      
+      #DeleteKeepLocal
+      PROPERTIES
+        Name                #DeleteKeepLocal
+        Label               #Delete(Keep local)
+        EnumValue           #6
+      ENDPROPERTIES
+      
+    ENDTYPEELEMENTS
+  ENDENUMTYPE
+  
+
+***Element: MNU
+
+; Microsoft Dynamics AX Menu : SysContextMenu unloaded
+; --------------------------------------------------------------------------------
+  MNUVERSION 5
+  
+  MENU #SysContextMenu
+    PROPERTIES
+      Name                #SysContextMenu
+      Label               #@SYS28637
+      SecurityKey         #SysDevelopment
+      Origin              #{100E0000-0000-1000-FB09-5DBF82A26477}
+    ENDPROPERTIES
+    
+    MENU #Git
+      PROPERTIES
+        Name                #Git
+        Label               #Git
+      ENDPROPERTIES
+      
+      MENUITEM
+        PROPERTIES
+          Name                #Add
+          MenuItemType        #Action
+          MenuItemName        #GitAddToStage
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      SEPARATOR
+      MENUITEM
+        PROPERTIES
+          Name                #Diff
+          MenuItemType        #Action
+          MenuItemName        #GitDiff
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Diff with previous version
+          MenuItemType        #Action
+          MenuItemName        #GitDiffWithPreviousVersion
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      SEPARATOR
+      MENUITEM
+        PROPERTIES
+          Name                #Show log
+          MenuItemType        #Action
+          MenuItemName        #GitShowLog
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Stash save
+          MenuItemType        #Action
+          MenuItemName        #GitStashSave
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      SEPARATOR
+      MENUITEM
+        PROPERTIES
+          Name                #Delete
+          MenuItemType        #Action
+          MenuItemName        #GitDelete
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Delete(Keep local)
+          MenuItemType        #Action
+          MenuItemName        #GitDeleteKeepLocal
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+    ENDMENU
+    MENUITEM
+      PROPERTIES
+        Name                #Compare existing code to proposed fix
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeConflictCodeRuleCompareUpgrade
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Auto-resolve source code rule conflict
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeConflictCodeRuleAutoResolve
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Compare altered code to original code
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeConflictCodeRuleCompareOrigina
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Revert auto-resolve source code rule conflict
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeConflictCodeRuleRevertResolve
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Mark as resolved
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeProjectMarkAsResolved
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Mark as unresolved
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeProjectMarkAsUnresolved
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Mark as resolved (including subnodes)
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeProjectMarkAsResolvedRecursive
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Mark as unresolved (including subnodes)
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeProjectMarkAsUnresolvedRecursi
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Rerun conflict detection
+        MenuItemType        #Action
+        MenuItemName        #SysUpgradeDetectConflictsRerun
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    SEPARATOR
+    MENU #@SYS24666
+      PROPERTIES
+        Name                #@SYS24666
+        Label               #@SYS24666
+      ENDPROPERTIES
+      
+      MENUITEM
+        PROPERTIES
+          Name                #Used by
+          MenuItemName        #XRefReferencesUsedBy
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Using (instant view)
+          MenuItemType        #Action
+          MenuItemName        #xRefUpdateTmpReferences
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Names
+          MenuItemName        #XRefNames
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Using
+          MenuItemName        #XRefReferencesUsing
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Update
+          MenuItemType        #Action
+          MenuItemName        #xRefUpdate
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+    ENDMENU
+    MENU #@SYS310448
+      PROPERTIES
+        Name                #SecTools
+        Label               #@SYS310448
+      ENDPROPERTIES
+      
+      MENUITEM
+        PROPERTIES
+          Name                #XRef analyzer
+          MenuItemName        #syssecanalysisaddIn
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Metadata analyzer
+          MenuItemName        #syssecanalysisaddInmetadataAnalyzer
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #View related security roles
+          MenuItemName        #SysSecObjectsAnalyze
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #View related security objects
+          MenuItemName        #SysSecObjectsInRole
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Apply changes
+          MenuItemType        #Action
+          MenuItemName        #SysSecSecurityApply
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+    ENDMENU
+    SEPARATOR
+    MENUITEM
+      PROPERTIES
+        Name                #Table browser
+        MenuItemName        #sysTableBrowser
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Auto-report
+        MenuItemName        #SysTableForm
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    SEPARATOR
+    MENUITEM
+      PROPERTIES
+        Name                #Reverse engineer
+        MenuItemName        #SysVisioAddIn
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Extract XML documentation
+        MenuItemType        #Output
+        MenuItemName        #SysXmlDocumentationCreateFile
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Run tests
+        MenuItemType        #Action
+        MenuItemName        #SysTestToolbarOpen
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Type hierarchy browser
+        MenuItemName        #SysTypeHierarchyBrowser
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    SEPARATOR
+    MENUITEM
+      PROPERTIES
+        Name                #Compare
+        MenuItemType        #Action
+        MenuItemName        #sysCompare
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Compile forward
+        MenuItemType        #Action
+        MenuItemName        #sysCompileForward
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Impact Analysis
+        MenuItemType        #Action
+        MenuItemName        #SysImpactAnalysis
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Find and replace
+        MenuItemType        #Action
+        MenuItemName        #SysSourceReplaceText
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Syntactic renaming
+        MenuItemType        #Action
+        MenuItemName        #SysSourceReplaceSyntax
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Duplicates
+        MenuItemName        #SysDictIndexShowDuplicates
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENU #@SYS16245
+      PROPERTIES
+        Name                #@SYS16245
+        Label               #@SYS16245
+        NeededAccessLevel   #NoAccess
+      ENDPROPERTIES
+      
+      MENUITEM
+        PROPERTIES
+          Name                #Entire path
+          MenuItemType        #Action
+          MenuItemName        #SysTreeNodePathCopyToClipboard
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Name
+          MenuItemType        #Action
+          MenuItemName        #SysTreeNodeNameCopyToClipboard
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Copy to current layer
+          MenuItemType        #Action
+          MenuItemName        #systreenodecopyToCurrentLayer
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+    ENDMENU
+    MENUITEM
+      PROPERTIES
+        Name                #Check best practices
+        MenuItemType        #Action
+        MenuItemName        #SysBPCheck
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Check form style best practices
+        MenuItemName        #SysBPStyleCheckAnalysis
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Source code title case update
+        MenuItemType        #Action
+        MenuItemName        #SysSourceNameWash
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Generate Axd query
+        MenuItemType        #Action
+        MenuItemName        #AxdGenerateAxdQuery
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #AIF Document Service Wizard
+        MenuItemName        #AxdWizard
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Register service
+        MenuItemType        #Action
+        MenuItemName        #AifRegisterService
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Help properties
+        MenuItemName        #HelpTopicID
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    SEPARATOR
+    MENU #@SYS53405
+      PROPERTIES
+        Name                #SysContextMenuOpenNewWindow
+        Label               #@SYS53405
+        SetCompany          #Yes
+      ENDPROPERTIES
+      
+      MENUITEM
+        PROPERTIES
+          Name                #Open application object window
+          MenuItemType        #Action
+          MenuItemName        #SysTreeNodeApplObjectOpenNewWindow
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open parent in window
+          MenuItemType        #Action
+          MenuItemName        #SysTreeNodeParentOpenNewWindow
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open new window
+          MenuItemType        #Action
+          MenuItemName        #SysTreeNodeOpenNewWindow
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENU #@SYS57839
+        PROPERTIES
+          Name                #@SYS57839
+          Label               #@SYS57839
+          NeededAccessLevel   #NoAccess
+        ENDPROPERTIES
+        
+        MENUITEM
+          PROPERTIES
+            Name                #usp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldUsp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #usr
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldUsr
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #cup
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldCup
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #cus
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldCus
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #vap
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldVap
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #var
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldVar
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #isp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldIsp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #isv
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldIsv
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #slp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldSlp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #sln
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldSln
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #fpp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldFpp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #fpk
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldFpk
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #glp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldGlp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #gls
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldGls
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #syp
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldSyp
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+        MENUITEM
+          PROPERTIES
+            Name                #sys
+            MenuItemType        #Action
+            MenuItemName        #SysOpenOldSys
+          ENDPROPERTIES
+          
+        ENDMENUITEM
+      ENDMENU
+      MENUITEM
+        PROPERTIES
+          Name                #Open used table
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowTable
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used table field group
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowFieldGroup
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used Extended Data Type
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowExtendedType
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used Enum
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowEnum
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used class
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowClass
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used form
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowForm
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used report
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowReport
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+      MENUITEM
+        PROPERTIES
+          Name                #Open used menu item
+          MenuItemType        #Action
+          MenuItemName        #SysOpenNewWindowMenuItem
+        ENDPROPERTIES
+        
+      ENDMENUITEM
+    ENDMENU
+    MENUITEM
+      PROPERTIES
+        Name                #Properties
+        MenuItemType        #Action
+        MenuItemName        #SysTreeNodeShowProperties
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Full CIL generation from X++
+        MenuItemType        #Action
+        MenuItemName        #SysXppILFullBuild
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Incremental CIL generation from X++
+        MenuItemType        #Action
+        MenuItemName        #SysXppILIncrementalBuild
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Approval wizard...
+        MenuItemName        #WorkflowAOTWizardApproval
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Task wizard...
+        MenuItemName        #WorkflowAOTWizardTask
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+    MENUITEM
+      PROPERTIES
+        Name                #Workflow type wizard...
+        MenuItemName        #WorkflowAOTWizardType
+      ENDPROPERTIES
+      
+    ENDMENUITEM
+  ENDMENU
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitAddToStage unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitAddToStage
+    Type: 3
+    PROPERTIES
+      Name                #GitAddToStage
+      Label               #@SYS60080
+      ObjectType          #Class
+      Object              #HM_GitOperationHelper
+      EnumTypeParameter   #HM_GitOperationType
+      Origin              #{03C57AD3-EEC6-45DB-B30B-42522809BB78}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitCreateTag unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitCreateTag
+    Type: 3
+    PROPERTIES
+      Name                #GitCreateTag
+      Label               #Create tag
+      ObjectType          #Class
+      Origin              #{1FC7ED07-A91B-4AC6-BF45-AA9F5B28F775}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitCreateBranch unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitCreateBranch
+    Type: 3
+    PROPERTIES
+      Name                #GitCreateBranch
+      Label               #Create branch
+      ObjectType          #Class
+      Origin              #{B3D68D2B-ED4C-4585-9CFE-CFEB08E36F6E}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitSwitchBranch unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitSwitchBranch
+    Type: 3
+    PROPERTIES
+      Name                #GitSwitchBranch
+      Label               #Switch/ Checkout
+      ObjectType          #Class
+      Origin              #{662C486A-ACCE-473A-A2AC-7D4EB0248A28}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitMerge unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitMerge
+    Type: 3
+    PROPERTIES
+      Name                #GitMerge
+      Label               #Merge
+      ObjectType          #Class
+      Origin              #{50E87EAA-00D6-4E4D-94F2-0A290BC9C2B2}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitRebase unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitRebase
+    Type: 3
+    PROPERTIES
+      Name                #GitRebase
+      Label               #Rebase
+      ObjectType          #Class
+      Origin              #{605F29C1-FE38-44A9-9426-19B24E0C87F2}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitDelete unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitDelete
+    Type: 3
+    PROPERTIES
+      Name                #GitDelete
+      Label               #Delete
+      ObjectType          #Class
+      Origin              #{7D9AAABE-925A-4A1C-BB4C-95E7AB0DF70D}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitDeleteKeepLocal unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitDeleteKeepLocal
+    Type: 3
+    PROPERTIES
+      Name                #GitDeleteKeepLocal
+      Label               #Delete(Keep local)
+      ObjectType          #Class
+      Origin              #{41F12C27-0F9B-4D1A-801D-13B95308ED47}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitStashSave unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitStashSave
+    Type: 3
+    PROPERTIES
+      Name                #GitStashSave
+      Label               #Stash save
+      ObjectType          #Class
+      Origin              #{8052527D-132E-448E-89A2-21F3BB474649}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitShowReflog unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitShowReflog
+    Type: 3
+    PROPERTIES
+      Name                #GitShowReflog
+      Label               #Show Reflog
+      ObjectType          #Class
+      Origin              #{9E224B60-81BB-4D98-AF45-4B3E0F64C952}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitShowLog unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitShowLog
+    Type: 3
+    PROPERTIES
+      Name                #GitShowLog
+      Label               #@SYS335975
+      ObjectType          #Class
+      Origin              #{3979581E-047C-4B5F-AA62-0BF17A392900}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitDiffWithPreviousVersion unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitDiffWithPreviousVersion
+    Type: 3
+    PROPERTIES
+      Name                #GitDiffWithPreviousVersion
+      Label               #Diff with previous version
+      ObjectType          #Class
+      Origin              #{C75C137E-CF8A-46FB-B3AE-A73181CF5452}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitDiff unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitDiff
+    Type: 3
+    PROPERTIES
+      Name                #GitDiff
+      Label               #Diff
+      ObjectType          #Class
+      Origin              #{03FD21B6-5C9F-40CF-9848-11F38A3442D3}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: FTM
+
+; Microsoft Dynamics AX MENUITEM : GitRevertFormStage unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  MENUITEM #GitRevertFormStage
+    Type: 3
+    PROPERTIES
+      Name                #GitRevertFormStage
+      Label               #Revert
+      ObjectType          #Class
+      Origin              #{111F656C-7641-404C-B700-9EF88A51CF8C}
+    ENDPROPERTIES
+    
+  ENDMENUITEM
+  
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: HM_GitOperationHelper unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #HM_GitOperationHelper
+    PROPERTIES
+      Name                #HM_GitOperationHelper
+      Origin              #{9E28166C-6D29-4C07-9C28-0C142EE1711A}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #addObjectToGit
+        #private void addObjectToGit()
+        #{
+        #    HM_GitExecutor::executeCommand(
+        #}
+      ENDSOURCE
+      SOURCE #executeOperation
+        #private void executeOperation(HM_GitOperationType _operationType)
+        #{
+        #    switch (_operationType)
+        #    {
+        #        case HM_GitOperationType::AddToStage:
+        #            break;
+        #
+        #        case HM_GitOperationType::Diff:
+        #            break;
+        #
+        #    }
+        #}
+      ENDSOURCE
+      SOURCE #main
+        #public static void main(Args args)
+        #{
+        #    HM_GitOperationType operationType;
+        #
+        #    HM_GitOperationHelper operationHelper = new HM_GitOperationHelper();
+        #
+        #    operationType = args.parmEnum();
+        #
+        #    operationHelper.executeOperation(operationType);
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #class HM_GitOperationHelper
+        #{
+        #    SysVersionControlRepositoryFolder repositoryFolder;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: HM_GitExecutor unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #HM_GitExecutor
+    PROPERTIES
+      Name                #HM_GitExecutor
+      Origin              #{620374E1-C9C6-4D19-A9CB-A217E03DF579}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #executeCommand
+        #public static str executeCommand(
+        #    SysVersionControlRepositoryFolder _repository,
+        #    str _command)
+        #{
+        #    System.Diagnostics.Process              process;
+        #    System.Diagnostics.ProcessStartInfo     processStartInfo;
+        #    System.Exception                        ex;
+        #    System.IO.StreamReader                  streamRead;
+        #
+        #    str ret;
+        #    int exitCode;
+        #
+        #    if (WinAPI::fileExists(_repository + @'\.git\index.lock', false))
+        #    {
+        #        //throw error();
+        #    }
+        #
+        #    try
+        #    {
+        #        if (WinAPI::setCurrentDirectory(_repository) != 0)
+        #        {
+        #            throw error(strFmt("Unable to change working directory to %1", _repository));
+        #        }
+        #
+        #        new InteropPermission(InteropKind::ClrInterop).assert();
+        #
+        #        process = new System.Diagnostics.Process();
+        #
+        #        processStartInfo = new System.Diagnostics.ProcessStartInfo();
+        #        processStartInfo.set_FileName(@'C:\Program Files (x86)\Git\bin\git.exe');
+        #        processStartInfo.set_Arguments(_command);
+        #        processStartInfo.set_UseShellExecute(false);
+        #        processStartInfo.set_RedirectStandardOutput(true);
+        #        processStartInfo.set_RedirectStandardError(true);
+        #        processStartInfo.set_CreateNoWindow(true);
+        #
+        #        process.set_StartInfo(processStartInfo);
+        #        process.Start();
+        #
+        #        while (!process.get_HasExited())
+        #        {
+        #            streamRead = process.get_StandardInput();
+        #            ret += streamRead.ReadToEnd();
+        #        }
+        #
+        #        exitCode = CLRInterop::getAnyTypeForObject(process.get_ExitCode());
+        #        if (exitCode)
+        #        {
+        #            streamRead = process.get_StandardError();
+        #            throw error(streamRead.ReadToEnd());
+        #        }
+        #        else
+        #        {
+        #            streamRead = process.get_StandardOutput();
+        #            ret += streamRead.ReadToEnd();
+        #        }
+        #
+        #        CodeAccessPermission::revertAssert();
+        #
+        #    }
+        #    catch
+        #    {
+        #        ex = CLRInterop::getLastException();
+        #
+        #        while (ex != null)
+        #        {
+        #            error(ex.ToString());
+        #
+        #            ex = ex.get_InnerException();
+        #        }
+        #    }
+        #
+        #    return ret;
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #class HM_GitExecutor
+        #{
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: PRN
+
+; Microsoft Dynamics AX Project : VersionControlProject unloaded
+; --------------------------------------------------------------------------------
+  PROJECTVERSION 2
+  
+  PROJECT #VersionControlProject
+  PRIVATE
+  PROPERTIES
+    Name                #VersionControlProject
+    Origin              #{04F4302F-5481-4774-B506-4C0FEECB174A}
+  ENDPROPERTIES
+  
+    PROJECTCLASS ProjectNode
+    GROUP #DataDictionary
+      PROPERTIES
+        Name                #DataDictionary
+        ProjectGroupType    #DataDictionary
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      GROUP #BaseEnums
+        PROPERTIES
+          Name                #BaseEnums
+          ProjectGroupType    #BaseEnums
+          GroupMask           #
+          PreventEditProperties #No
+        ENDPROPERTIES
+        
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 40
+          UTILOBJECTID 101270
+          NODETYPE 209
+          NAME #HM_GitOperationType
+        ENDNODE
+        ENDGROUP
+        
+      ENDGROUP
+      
+    GROUP #Menus
+      PROPERTIES
+        Name                #Menus
+        ProjectGroupType    #Menus
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 16
+        UTILOBJECTID 0
+        NODETYPE 205
+        NAME #SysContextMenu
+      ENDNODE
+      ENDGROUP
+      
+    GROUP #MenuItems
+      PROPERTIES
+        Name                #MenuItems
+        ProjectGroupType    #MenuItems
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      GROUP #Action
+        PROPERTIES
+          Name                #Action
+          ProjectGroupType    #Action
+          GroupMask           #
+          PreventEditProperties #No
+        ENDPROPERTIES
+        
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitAddToStage
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitCreateTag
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitCreateBranch
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitSwitchBranch
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitMerge
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitRebase
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitDelete
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitDeleteKeepLocal
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitStashSave
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitShowReflog
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitShowLog
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitDiffWithPreviousVersion
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitDiff
+        ENDNODE
+        BEGINNODE
+          FILETYPE 0
+          UTILTYPE 3
+          UTILOBJECTID 0
+          NODETYPE 296
+          NAME #GitRevertFormStage
+        ENDNODE
+        ENDGROUP
+        
+      ENDGROUP
+      
+    GROUP #Classes
+      PROPERTIES
+        Name                #Classes
+        ProjectGroupType    #Classes
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1046579
+        NODETYPE 329
+        NAME #HM_GitOperationHelper
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1046578
+        NODETYPE 329
+        NAME #HM_GitExecutor
+      ENDNODE
+      ENDGROUP
+      
+  ENDPROJECT
+  
+
+***Element: END
